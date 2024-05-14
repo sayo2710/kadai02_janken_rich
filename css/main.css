@@ -1,0 +1,185 @@
+/* wrapper */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 0;
+}
+
+.header_h1,
+.footer_h1,
+.side_h2,
+.btn_msg_h2 {
+  text-align: center;
+  font-weight: bold;
+}
+.side_h2,
+.btn_msg_h2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* footer */
+.footer {
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* container */
+.container {
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.side {
+  width: 20%;
+  background-color: blanchedalmond;
+  box-sizing: border-box; /* 罫線も含む長さ*/
+  border: 4px dashed #7f4600; /* 枠線の指定（上） */
+}
+
+/* 音声入力 */
+.onsei_input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.onsei_text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.onsei_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_mic {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.btn_mic:hover {
+  color: #fff;
+  background: #000;
+}
+
+/* main */
+.main {
+  width: 80%;
+}
+
+/* janken area */
+.my_area {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: rgb(254 226 226);
+  width: 50%;
+}
+
+.my_hand {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.other_area {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: rgb(186 230 253);
+  width: 50%;
+}
+
+.other_hand {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+/* button */
+.button_rsp {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_rock {
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.btn_rock:hover {
+  color: #fff;
+  background: #000;
+}
+
+.btn_scissors {
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.btn_scissors:hover {
+  color: #fff;
+  background: #000;
+}
+
+.btn_paper {
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.btn_paper:hover {
+  color: #fff;
+  background: #000;
+}
+
+.button_reset {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_reset {
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+.btn_reset:hover {
+  color: #fff;
+  background: #000;
+}

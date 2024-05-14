@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんアプリリッチver</title>
+    <link rel="icon" href="./img/stone.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="wrapper">
+    <header class="header">
+        <div class="header_msg">
+            <h1 class="header_h1">じゃんけんアプリリッチver</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- side -->
+        <!-- 音声入力 -->
+        <div class="side">
+            <div class="onsei_input">
+                <h2 class="side_h2">音声入力</h2>
+            </div>
+            <div class="onsei_btn">
+                <button class="btn_mic">ON</button>
+            </div>
+            <p class="onsei_text">&nbsp;</p>
+        </div>
+        <!-- main -->
+        <main class="main">
+            <h2 class="btn_msg_h2">ボタンを押してください</h2>
+            <div class="button_rsp">
+                <div>
+                    <button class="btn_rock">グー</button>
+                </div>
+                <div>
+                    <button class="btn_scissors">チョキ</button>
+                </div>
+                <div>
+                    <button class="btn_paper">パー</button>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="my_area">
+                    <div>あなたの手</div>
+                    <div class="my_hand">
+                        <img class="my_hand_pic" src="./img/stone.png" alt="">
+                    </div>
+                </div>
+                <div class="other_area">
+                    <div>相手の手</div>
+                    <div class="other_hand">
+                        <img class="other_hand_pic" src="./img/stone.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 勝敗結果 -->
+            <div class="text-center py-6">
+                <h1 class=" shohai_titlle">結果</h1>
+                <p class="shohai_msg">&nbsp;</p>
+            </div>
+
+            <!-- リセットボタン -->
+            <div class="button_reset">
+                <button class="btn_reset" onclick="window.location.reload();">リセット</button>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_msg">
+            <h1 class="footer_h1">© 2024 App of RPS ( Author：Sayo.Konno )</h1>
+        </div>
+
+    </footer>
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
