@@ -93,33 +93,50 @@ recognition.onresult = (event) => {
   const speech = event.results[0][0].transcript;
   $(".onsei_text").html(speech);
 
-  // 自分の手
-  if ("じゃんけんグー" === speech) {
-    const my_hand_pic = document.querySelector(".my_hand_pic");
-    const my_pic_url = pics_src[0];
-    my_hand_pic.src = my_pic_url;
-  } else if ("じゃんけん チョキ" === speech) {
-    const my_hand_pic = document.querySelector(".my_hand_pic");
-    const my_pic_url = pics_src[1];
-    my_hand_pic.src = my_pic_url;
-  } else if ("じゃんけんパー") {
-    const my_hand_pic = document.querySelector(".my_hand_pic");
-    const my_pic_url = pics_src[2];
-    my_hand_pic.src = my_pic_url;
-  } else {
-    alert("もう一度お願いします");
-  }
   // 相手の手
   const other = Math.floor(Math.random() * 3);
   const other_hand_pic = document.querySelector(".other_hand_pic");
   const other_pic_url = pics_src[other];
   other_hand_pic.src = other_pic_url;
-  // 結果メッセージ
-  if (0 === other) {
-    $(".shohai_msg").html(shohai_message[0]);
-  } else if (1 === other) {
-    $(".shohai_msg").html(shohai_message[2]);
-  } else if (2 === other) {
-    $(".shohai_msg").html(shohai_message[1]);
+
+  // 自分の手
+  if ("じゃんけんグー" === speech) {
+    const my_hand_pic = document.querySelector(".my_hand_pic");
+    const my_pic_url = pics_src[0];
+    my_hand_pic.src = my_pic_url;
+    // 結果メッセージ
+    if (other === 0) {
+      $(".shohai_msg").html(shohai_message[1]);
+    } else if (1 === other) {
+      $(".shohai_msg").html(shohai_message[0]);
+    } else if (2 === other) {
+      $(".shohai_msg").html(shohai_message[2]);
+    }
+  } else if ("じゃんけん チョキ" === speech) {
+    const my_hand_pic = document.querySelector(".my_hand_pic");
+    const my_pic_url = pics_src[1];
+    my_hand_pic.src = my_pic_url;
+    // 結果メッセージ
+    if (other === 0) {
+      $(".shohai_msg").html(shohai_message[2]);
+    } else if (1 === other) {
+      $(".shohai_msg").html(shohai_message[1]);
+    } else if (2 === other) {
+      $(".shohai_msg").html(shohai_message[0]);
+    }
+  } else if ("じゃんけんパー") {
+    const my_hand_pic = document.querySelector(".my_hand_pic");
+    const my_pic_url = pics_src[2];
+    my_hand_pic.src = my_pic_url;
+    // 結果メッセージ
+    if (other === 0) {
+      $(".shohai_msg").html(shohai_message[0]);
+    } else if (1 === other) {
+      $(".shohai_msg").html(shohai_message[2]);
+    } else if (2 === other) {
+      $(".shohai_msg").html(shohai_message[1]);
+    }
+  } else {
+    alert("もう一度お願いします");
   }
 };
